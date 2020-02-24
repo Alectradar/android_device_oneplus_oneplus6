@@ -28,6 +28,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml
+
 # A/B
 AB_OTA_UPDATER := true
 
