@@ -79,6 +79,7 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
+	init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     ueventd.qcom.rc
 
